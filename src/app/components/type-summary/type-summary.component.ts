@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-type-summary',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./type-summary.component.css']
 })
 export class TypeSummaryComponent implements OnInit {
+
+  @Input() name: string = '';
+  @Input() amount: string = '';
+  @Input() tag: string = '';
 
   constructor() { }
 
