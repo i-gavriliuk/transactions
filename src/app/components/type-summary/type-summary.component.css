@@ -1,0 +1,20 @@
+.type-card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.type-card__title {
+  margin-bottom: 1.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.type-card__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  order: -1;
+}
+
+.type-card__btn {
+  align-self: flex-end;
+}

@@ -1,13 +1,13 @@
-<div *ngIf="transactions.length" class="row">
+<header *ngIf="transactions.length" class="row">
     <app-heading-summary class="col"
       [total]="transactions.length">
     </app-heading-summary>
-</div>
+</header>
 
-<div *ngIf="transactionsByType.length" class="row">
+<section *ngIf="transactionsByType.length" class="row">
     <app-type-summary *ngFor="let type of transactionsByType; index as i" class="col-sm-6 col-lg-3 pt-4"
       [title]="type.typeName"
       [amount]="calculateAmount(type.transactions)"
       [tag]="i">
     </app-type-summary>
-</div>
+</section>
