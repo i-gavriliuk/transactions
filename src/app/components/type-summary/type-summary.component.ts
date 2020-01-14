@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TypeSummaryComponent implements OnInit {
 
-  @Input() name: string = '';
+  @Input() title: string = '';
   @Input() amount: string = '';
   @Input() tag: string = '';
 
