@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { TypeSummaryComponent } from './components/type-summary/type-summary.component';
 import { HeadingSummaryComponent } from './components/heading-summary/heading-summary.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { HeadingSummaryComponent } from './components/heading-summary/heading-su
     AppComponent,
     SummaryComponent,
     TypeSummaryComponent,
-    HeadingSummaryComponent
+    HeadingSummaryComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

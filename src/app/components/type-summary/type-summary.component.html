@@ -2,6 +2,6 @@
   <div class="card-body type-card__body">
     <h2 class="card-title type-card__title">{{ title | titlecase }}</h2>
     <p class="card-text type-card__text">{{ amount }}</p>
-    <a href="#" class="btn type-card__btn btn-primary">See all</a>
+    <a [routerLink]="['/navigator']" [queryParams]="{ tag: tag }" class="btn type-card__btn btn-primary">See all</a>
   </div>
 </div>
