@@ -12,6 +12,6 @@ export class TransactionsService {
   constructor(private http: HttpClient) { }
 
   loadData(): Observable<Transaction[]>{
-    return this.http.get<Transaction[]>('../../assets/mock-data.json');
+    return this.http.get<Transaction[]>('https://raw.githubusercontent.com/i-gavriliuk/transactions/master/src/assets/mock-data.json');
   }
 }
